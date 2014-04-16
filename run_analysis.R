@@ -26,7 +26,7 @@ run_analysis <- function() {
   #identify columns to keep
   meanCols<-grepl("mean\\(\\)",features$V2)
   stdCols<-grepl("std\\(\\)",features$V2)
-  colsToKeep<-stdCols|meanCols|meanCols2
+  colsToKeep<-stdCols|meanCols
   keptX<-data.table(combinedX[,colsToKeep])
   labelsX<-features[colsToKeep,]
   
