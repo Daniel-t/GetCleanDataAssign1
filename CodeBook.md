@@ -33,7 +33,7 @@ The specific fields are:
 *fBodyBodyGyroMag-mean() fBodyBodyGyroMag-std()     
 *fBodyBodyGyroJerkMag-mean() fBodyBodyGyroJerkMag-std()
 
-Each of the obsercations is was normalised to be between -1 and 1 prior to being received.
+Each of the obsercations was normalised to be between -1 and 1 prior to being received.
 
 ## Transformations & Cleanup
 The run_analysis script performs the following tasks  
