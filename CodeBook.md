@@ -2,6 +2,9 @@
 
 THe documents describes the data outputed from run_analysis and the process used to create the same from the raw data.
 
+## Assumptions
+Due to uncertainty around the requirements, it was assumed that only observations with "-mean()" or "-std()" are required, other observations were discarded.
+
 ## Variables
 
 ### SubjectId
@@ -33,7 +36,7 @@ The specific fields are:
 *fBodyBodyGyroMag-mean() fBodyBodyGyroMag-std()     
 *fBodyBodyGyroJerkMag-mean() fBodyBodyGyroJerkMag-std()
 
-Each of the obsercations was normalised to be between -1 and 1 prior to being received.
+Each of the observations was normalised to be between -1 and 1 prior to being received.
 
 ## Transformations & Cleanup
 The run_analysis script performs the following tasks  
@@ -50,5 +53,5 @@ The run_analysis script performs the following tasks
 5. Summarise data, all data is summarised by obtaining the mean for all obserations for each subjectId,Activity combination.  
 6. The summarised data is returned to the calling user.  
 
-  
+
 
